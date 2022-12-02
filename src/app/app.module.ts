@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { Routes } from '@angular/router';
+import { CategoryComponent } from './category/category.component';
+import { HomeComponent } from './home/home.component';
+import { ChildrenclothesComponent } from './products/childrenclothes/childrenclothes.component';
 
 
 
@@ -16,7 +19,10 @@ import { Routes } from '@angular/router';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    CategoryComponent,
+    HomeComponent,
+    ChildrenclothesComponent
   ],
   imports: [
     BrowserModule,
