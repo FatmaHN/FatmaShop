@@ -3,13 +3,13 @@
 
     <div class="row">
         
-        <div class="col-lg-4" *ngFor="let child of childrensData;index as i">
+        <div class="col-lg-4" *ngFor="let clo of educationData;index as i">
             <!--<div class="" *ngIf="i<=3">-->
                 <div class="foodbox mt-3 mb-3">
-                    <img src="{{child.imgurl}}">
-                    <h1>{{child.nom}}</h1>
-                    <p>{{child.marque}}</p>
-                    <p>{{child.prix}}</p>
+                    <img src="{{clo.imgurl}}">
+                    <h1>{{clo.nom}}</h1>
+                    <p>{{clo.marque}}</p>
+                    <p>{{clo.prix}}</p>
                     <!--<p>{{cat.foodDetails}}</p>-->
                     <a routerLink="menu" class= "btn btn-info btn-block"> Add to Cart <i class="bi bi-arrow-right"></i></a>
                     <br/>
@@ -17,3 +17,11 @@
                 </div>
             <!--</div>-->
         </div>
+
+
+    </div>
+
+</div>
+
+
+

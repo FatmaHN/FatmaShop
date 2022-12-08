@@ -11,7 +11,14 @@ import { Routes } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { HomeComponent } from './home/home.component';
 import { ChildrenclothesComponent } from './products/childrenclothes/childrenclothes.component';
-
+import { WoamnclothesComponent } from './products/woamnclothes/woamnclothes.component';
+import { BeautyComponent } from './products/beauty/beauty.component';
+import { KitchenequipmentComponent } from './products/kitchenequipment/kitchenequipment.component';
+import{ComputerhardwareComponent}from './products/computerhardware/computerhardware.component';
+import { HomeapplianceComponent } from './products/homeappliance/homeappliance.component';
+import { EducationComponent } from './products/education/education.component';
+import { ManfashionComponent } from './products/manfashion/manfashion.component';
+import { ProductBuyComponent } from './product-buy/product-buy.component';
 
 
 @NgModule({
@@ -22,7 +29,15 @@ import { ChildrenclothesComponent } from './products/childrenclothes/childrenclo
     AboutComponent,
     CategoryComponent,
     HomeComponent,
-    ChildrenclothesComponent
+    ChildrenclothesComponent,
+    WoamnclothesComponent,
+    BeautyComponent,
+    KitchenequipmentComponent,
+    ManfashionComponent,
+    EducationComponent,
+    HomeapplianceComponent,
+    ComputerhardwareComponent,
+    ProductBuyComponent
   ],
   imports: [
     BrowserModule,

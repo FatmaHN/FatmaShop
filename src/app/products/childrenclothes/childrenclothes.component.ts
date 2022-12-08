@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DetailChildrens } from "src/app/services/childrens/detail-childrens";
 @Component({
   selector: 'app-childrenclothes',
   templateUrl: './childrenclothes.component.html',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildrenclothesComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private services:DetailChildrens) { }
+  childrensData:any;
   ngOnInit(): void {
+    this.childrensData=this.services.childrenDetails;
   }
 
 }
