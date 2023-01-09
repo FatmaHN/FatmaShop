@@ -1,0 +1,24 @@
+
+
+<!-- foodbox -->
+<div class="container mt-4 mb-4">
+   <h1 class="text-center mt-3">Dear Customer<br/> Welcome to our website<br /></h1>
+     <div class="row">
+         <div class="col-lg-4 mt-3 foodbox" *ngFor="let product of ProductData;index as i">
+            <div class="" *ngIf="i<=5">
+                <div class="foodbox mt-3 mb-3">
+                    <img src="{{product.imgurl}}">
+                    <h1>{{product.nom}}</h1>
+                    <p>Couleur :   {{product.couleur}}</p>
+                    <p>Marque  :   {{product.marque}}</p>
+                    <p>Taille  :   {{product.taille}}</p>
+                    <p>Prix    :   {{product.prix}}</p>
+                    <a class="buybtn" [routerLink]="['/product',product.id_col]" class= "btn btn-info btn-block"> Add to Cart &nbsp;<i class="bi bi-bag"></i></a>
+                    <br/>
+                    <!--<a class="buybtn" [routerLink]="['/Catecory']">Buy Now &nbsp;<i class="bi bi-bag"></i></a> -->
+                </div>
+            </div>
+     </div>
+     <div>&emsp;&emsp;&emsp;
+        <a routerLink="category" class="viewmorebtn " >View More <i class="bi bi-arrow-right"></i></a></div>
+ </div>
